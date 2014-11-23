@@ -123,7 +123,7 @@ In lieu of a formal style guide, take care to maintain the existing coding style
 
 ## Release History
 
-### 0.3.4
+### 0.2.4
 - (g1ps) Separated the legend from the graphs.
 - (g1ps) Added the ability to configure which shapes to use.
 
