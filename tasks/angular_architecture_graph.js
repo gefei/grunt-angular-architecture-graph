@@ -17,7 +17,8 @@ module.exports = function(grunt) {
       hideAngularServices: true,
       shapeModules: "component",
       shapeFactories: "ellipse",
-      shapeDirectives: "cds"
+      shapeDirectives: "cds",
+      colorScheme: "paired12"
     });
 
 	Helpers.preprocessTemplates(options);

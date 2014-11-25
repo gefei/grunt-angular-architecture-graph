@@ -96,7 +96,7 @@ nodes.
 shapeFactories: 'house'
 ```
 
-#### options.shapeModules
+#### options.shapeDirectives
 Type: `String`
 Default value: `cds`
 
@@ -111,6 +111,21 @@ nodes.
 shapeDirectives: 'trapezium'
 ```
 
+Available graphviz shapes are shown [here](http://www.graphviz.org/doc/info/shapes.html)
+
+#### options.colorScheme
+Type: `String`
+Default value: `paired12`
+
+A string value that allows you to change the  graph colour scheme. You currently need to choose a scheme with at least 9 colours to ensure that all nodes
+are coloured. Colour schemes which include white or very pale colours will cause some nodes to be hard to see or appear invisible against the white background
+
+```js
+colorScheme: 'set19'
+```
+
+Available graphviz colour schemes are shown [here](http://www.graphviz.org/doc/info/colors.html)
+
 
 ## Contributing
 In lieu of a formal style guide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
@@ -123,7 +138,8 @@ In lieu of a formal style guide, take care to maintain the existing coding style
 
 ## Release History
 
-### 0.2.4
+### 0.2.5
 - (g1ps) Separated the legend from the graphs.
 - (g1ps) Added the ability to configure which shapes to use.
+- (g1ps) Fixed 0.2.4 breakage. Added the ability to configure the colour scheme.
 

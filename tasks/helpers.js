@@ -10,11 +10,13 @@ module.exports = function (grunt) {
 
   grunt.loadNpmTasks("grunt-graphviz");
 
+  var basePath = "node_modules/grunt-angular-architecture-graph/";
+
   var files = {
-    legend:  grunt.file.read("templates/legend.def"),
-    all:     grunt.file.read("templates/all.def"),
-    modules: grunt.file.read("templates/modules.def"),
-    module:  grunt.file.read("templates/module.def")
+    legend:  grunt.file.read(basePath + "templates/legend.def"),
+    all:     grunt.file.read(basePath + "templates/all.def"),
+    modules: grunt.file.read(basePath + "templates/modules.def"),
+    module:  grunt.file.read(basePath + "templates/module.def")
   };
 
   var templates = {
@@ -49,7 +51,8 @@ module.exports = function (grunt) {
       files[file] = files[file]
                       .replace(/\{1\}/g, options.shapeModules)
                       .replace(/\{2\}/g, options.shapeFactories)
-                      .replace(/\{3\}/g, options.shapeDirectives);
+                      .replace(/\{3\}/g, options.shapeDirectives)
+                      .replace(/\{scheme\}/g, options.colorScheme);
     });
 
     // Prime the templates object.

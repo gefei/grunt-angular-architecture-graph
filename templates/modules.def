@@ -1,5 +1,5 @@
 digraph dependencies {
-  node[shape="{2}",style="filled",colorscheme=paired12]
+  node[shape="{2}",style="filled",colorscheme={scheme}]
 
   {{~it.modules :module}}
     "{{= module.name }}"[label="{{= module.name }}", color=1]
