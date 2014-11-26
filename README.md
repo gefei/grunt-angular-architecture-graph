@@ -139,6 +139,11 @@ In lieu of a formal style guide, take care to maintain the existing coding style
 ## Release History
 
 ### 0.2.5
+
+- (g1ps) fixes 0.2.4 build break
+- (g1ps) Adds colour scheme as a configuration
+
+### 0.2.4
 - (g1ps) Separated the legend from the graphs.
 - (g1ps) Added the ability to configure which shapes to use.
 - (g1ps) Fixed 0.2.4 breakage. Added the ability to configure the colour scheme.
