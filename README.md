@@ -1,4 +1,4 @@
-# grunt-angular-architecture-graph [![Build Status](https://travis-ci.org/lucalanca/grunt-angular-modules-graph.png?branch=master)](https://travis-ci.org/lucalanca/grunt-angular-modules-graph)
+# grunt-angular-architecture-graph [![Build Status](https://travis-ci.org/lucalanca/grunt-angular-architecture-graph.png?branch=master)](https://travis-ci.org/lucalanca/grunt-angular-architecture-graph)
 
 
 > Create graphs of your angular projects using angular-architecture-graph.
@@ -37,19 +37,19 @@ grunt.initConfig({
 
 #### Demos
 
-![legend](https://raw.githubusercontent.com/lucalanca/grunt-angular-modules-graph/master/docs/images/legend.png "Generated Graph Legend")
+![legend](https://raw.githubusercontent.com/lucalanca/grunt-angular-architecture-graph/master/docs/images/legend.png "Generated Graph Legend")
 
 - ui-router overview diagram
-![angular-ui/ui-router overview](https://raw.githubusercontent.com/lucalanca/grunt-angular-modules-graph/master/docs/images/all.ui-router.png "angular-ui/ui-router Dependencies graph")
+![angular-ui/ui-router overview](https://raw.githubusercontent.com/lucalanca/grunt-angular-architecture-graph/master/docs/images/all.ui-router.png "angular-ui/ui-router Dependencies graph")
 
 - ui-router ui.router.state module
-![angular-ui/ui-router state module](https://raw.githubusercontent.com/lucalanca/grunt-angular-modules-graph/master/docs/images/ui.router.state.png "angular-ui/ui-router Dependencies graph")
+![angular-ui/ui-router state module](https://raw.githubusercontent.com/lucalanca/grunt-angular-architecture-graph/master/docs/images/ui.router.state.png "angular-ui/ui-router Dependencies graph")
 
 - ui-bootstrap
-![angular-ui/bootstrap ](https://raw.githubusercontent.com/lucalanca/grunt-angular-modules-graph/master/docs/images/all.ui-bootstrap.png "angular-ui/bootstrap Dependencies graph")
+![angular-ui/bootstrap ](https://raw.githubusercontent.com/lucalanca/grunt-angular-architecture-graph/master/docs/images/all.ui-bootstrap.png "angular-ui/bootstrap Dependencies graph")
 
 - ui-bootstrap ui.bootstrap.tooltip module
-![angular-ui/bootstrap tooltip module ](https://raw.githubusercontent.com/lucalanca/grunt-angular-modules-graph/master/docs/images/ui.bootstrap.tooltip.png "angular-ui/bootstrap Dependencies graph")
+![angular-ui/bootstrap tooltip module ](https://raw.githubusercontent.com/lucalanca/grunt-angular-architecture-graph/master/docs/images/ui.bootstrap.tooltip.png "angular-ui/bootstrap Dependencies graph")
 
 
 ### Options
