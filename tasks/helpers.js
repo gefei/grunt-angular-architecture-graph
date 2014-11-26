@@ -8,9 +8,14 @@ dot.templateSettings.strip = false;
 
 module.exports = function (grunt) {
 
-  grunt.loadNpmTasks("grunt-graphviz");
-
   var basePath = "node_modules/grunt-angular-architecture-graph/";
+  // If this doesn't exist it means that we're executing this tasks tests
+  // and the templates the base path is the root and not the
+  // gruntfile.js location
+  if (!grunt.file.exists("node_modules/grunt-angular-architecture-graph")) {
+    basePath = "";
+  }
+  grunt.loadNpmTasks("grunt-graphviz");
 
   var files = {
     legend:  grunt.file.read(basePath + "templates/legend.def"),
@@ -28,7 +33,7 @@ module.exports = function (grunt) {
 
   // Available Helpers
   return {
-	preprocessTemplates: preprocessTemplates,
+    preprocessTemplates: preprocessTemplates,
     parseSrcFiles      : parseSrcFiles,
     analyseFiles       : analyseFiles,
     generateGraphFiles : generateGraphFiles,
