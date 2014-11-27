@@ -20,7 +20,7 @@ grunt.loadNpmTasks('grunt-angular-architecture-graph');
 
 ## Requirements
 
-- [**graphviz**](graphviz.org)
+- [**graphviz**](http://www.graphviz.org/)
 
 if running OS X and using homebrew, simply execute:
 
