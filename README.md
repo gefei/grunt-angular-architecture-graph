@@ -18,6 +18,17 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-angular-architecture-graph');
 ```
 
+## Requirements
+
+- [**graphviz**](graphviz.org)
+
+if running OS X and using homebrew, simply execute:
+
+```
+ brew install graphviz
+```
+
+
 ## The "angular_architecture_graph" task
 
 ### Overview
