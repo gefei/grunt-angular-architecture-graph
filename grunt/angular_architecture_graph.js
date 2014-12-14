@@ -12,5 +12,10 @@ module.exports = {
     files: {
       "tmp/uiBootstrap": ["test/fixtures/ui-bootstrap.js"]
     }
+  },
+  modularApp: {
+    files: {
+      "tmp/modularApp": ["test/fixtures/modular-app.js"]
+    }
   }
 };
