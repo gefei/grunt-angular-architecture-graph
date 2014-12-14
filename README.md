@@ -18,6 +18,17 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-angular-architecture-graph');
 ```
 
+## Requirements
+
+- [**graphviz**](http://www.graphviz.org/)
+
+if running OS X and using homebrew, simply execute:
+
+```
+ brew install graphviz
+```
+
+
 ## The "angular_architecture_graph" task
 
 ### Overview
@@ -146,5 +157,4 @@ In lieu of a formal style guide, take care to maintain the existing coding style
 ### 0.2.4
 - (g1ps) Separated the legend from the graphs.
 - (g1ps) Added the ability to configure which shapes to use.
-- (g1ps) Fixed 0.2.4 breakage. Added the ability to configure the colour scheme.
 
