@@ -18,7 +18,11 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-angular-architecture-graph');
 ```
 
-## Requirements
+## The "angular_architecture_graph" task
+
+#### OS X
+
+***Requirements***
 
 - [**graphviz**](http://www.graphviz.org/)
 
@@ -28,23 +32,47 @@ if running OS X and using homebrew, simply execute:
  brew install graphviz
 ```
 
+#### Windows 7
 
-## The "angular_architecture_graph" task
+***Requirements***
 
-### Overview
+The windows installer of graphviz: [graphviz-X.XX.msi](http://www.graphviz.org/Download..php), remember to set the Path and point it to your bin directory. e.g. ```C:\Program Files (x86)\GraphvizX.XX\bin```.
+
+#### Manjaro 0.8.11 (arch linux)
+
+***Requirements***
+
+Install via `yaourt` the graphviz package e.g.: `yaourt graphviz`.
+
+#### General
+
+***Requirements***
+
+Make sure the following grunt packages are installed:
+-    [grunt-graphviz](https://github.com/euskadi31/grunt-graphviz)
+-    [grunt-angular-architecture-graph](https://github.com/lucalanca/grunt-angular-architecture-graph)
+
+You only need to load the [grunt-angular-architecture-graph](https://github.com/lucalanca/grunt-angular-architecture-graph) in your grunt file.
+
+***Gruntfile***
+
 In your project's Gruntfile, add a section named `angular_architecture_graph` to the data object passed into `grunt.initConfig()`.
 
 ```js
-grunt.initConfig({
-  angular_architecture_graph: {
-    diagram: {
-      files: {
-        'PATH/TO/OUTPUT/FILES': [ 'PATH/TO/YOUR/DIST/FILE.JS' ]
-      }
-    }
-  },
-});
+        angular_architecture_graph: {
+            diagram: {
+                files: {
+                    // "PATH/TO/OUTPUT/FILES": ["PATH/TO/YOUR/FILES/*.js"]
+                    "architecture": [
+                        "<%= projectConfig.app %>/<%= projectConfig.project %>/**/*.js"
+                    ]
+                }
+            }
+        }
 ```
+
+execute the task and the diagrams will be in the output folder, in this example it is in the folder ```architecture```.
+
 
 #### Demos
 
