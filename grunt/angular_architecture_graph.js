@@ -17,5 +17,10 @@ module.exports = {
     files: {
       "tmp/modularApp": ["test/fixtures/modular-app.js"]
     }
+  },
+  example: {
+    files: {
+      "tmp/example": ["test/fixtures/example.js"]
+    }
   }
 };
