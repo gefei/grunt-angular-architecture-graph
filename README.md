@@ -177,6 +177,9 @@ In lieu of a formal style guide, take care to maintain the existing coding style
 
 ## Release History
 
+### 0.2.6
+- (lucalanca) Moves grunt-graphviz from devDependencies to dependencies.
+
 ### 0.2.5
 
 - (g1ps) fixes 0.2.4 build break
