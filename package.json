@@ -1,7 +1,7 @@
 {
   "name": "grunt-angular-architecture-graph",
   "description": "reate graphs of your angular projects using angular-architecture-graph.",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "homepage": "https://github.com/lucalanca/grunt-angular-architecture-graph",
   "author": {
     "name": "Joao Figueiredo",
@@ -43,7 +43,7 @@
     "gruntplugin"
   ],
   "dependencies": {
-    "angular-architecture-graph": "0.2.3",
+    "angular-architecture-graph": "0.2.4",
     "grunt-graphviz": "^0.1.1",
     "dot": "^1.0.2"
   }
